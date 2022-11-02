@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="bg">
+
+
+    <main class="main-container">
+        <section class="sidebar">
+            <h1>User Login</h1>
+            <button id="hidden" class="btn s-p">Setup Your Profile</button>
+            <button id="new-contact" class="btn btn2">Login</button>
+        </section>
+    </main>
+    <div id="main">
+        <div id="container" class="container2">
+            <i class="fa fa-times fa-2x close-btn" onclick="close()" aria-hidden="true"></i>
+            <h1 class="h1">Create Profile</h1>
+            <div id="display-image">
+                <img src="./128-1280406_view-user-icon-png-user-circle-icon-png.png" id="img-box" width="100"
+                    height="100">
+                <label class="image-span">Upload Photo<input type="file" id="image-input"
+                        accept="image/jpeg, image/png, image/jpg">
+                </label>
+            </div>
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" name="" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="register-btn" class="register_btn btn">Create Profile</button>
+            <span id="alredy-account" class="spn">I've an account</span>
+        </div>
+        <div id="container2" class="container2">
+            <i class="fa fa-times fa-2x close-btn" onclick="close()" aria-hidden="true"></i>
+            <h1 class="h1">Login Profile</h1>
+            <div id="display-image">
+                <img src="./128-1280406_view-user-icon-png-user-circle-icon-png.png" id="img-box2" width="100"
+                    height="100">
+            </div>
+            <section class="user-profile">
+                <div class="user-profile-img">
+                    <img src="./128-1280406_view-user-icon-png-user-circle-icon-png.png" width="100" height="100"
+                        id="user-img">
+                    <label>Upload Photo
+                        <input type="file" id="user-img-input" accept="image/jpeg, image/png, image/jpg">
+                    </label>
+                </div>
+                <button class="user-btn">Done</button>
+            </section>
+            <!-- <input  type="text"  placeholder="Name"> -->
+            <input id="l-email" type="email" name="" id="email" placeholder="Email">
+            <input id="l-password" type="password" id="password" placeholder="Password">
+            <button id="login-btn" class="register_btn btn">Login Profile</button>
+            <span class="spn">Forget password?</span>
+        </div>
+        <div id="disableDiv">
+        </div>
+    </div>
+
+    <script type="module" src="chat.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

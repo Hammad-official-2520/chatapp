@@ -1,0 +1,82 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://kit.fontawesome.com/e24fdbd7b8.js" crossorigin="anonymous"></script>
+  <title>Chat</title>
+  <link rel="stylesheet" href="chat.css" />
+</head>
+
+<body>
+  <div id="container" class="container">
+    <div class="leftSide">
+      <div class="header">
+        <div class="userimg">
+          <img src="" class="cover" />
+        </div>
+        <ul class="nav_icons">
+          <li>
+            <ion-icon name="scan-circle-outline"></ion-icon>
+          </li>
+          <li>
+            <ion-icon name="add-outline"></ion-icon>
+          </li>
+          <li><i class="fa-solid fa-ellipsis-vertical"></i></ion-icon>
+          </li>
+        </ul>
+      </div>
+      <div class="search_chat">
+        <div>
+          <input id="my-input" type="text" placeholder="Type to search..." />
+          <ion-icon name="search-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div id="users" class="chatlist">
+
+      </div>
+    </div>
+
+    <div class="rightSide">
+      <div class="header">
+        <div id="pro" class="imgText">
+          <!-- <div id="chatprofile" class="userimg">
+            </div> -->
+
+        </div>
+        <ul class="nav_icons">
+          <li>
+            <ion-icon name="search-outline"></ion-icon>
+          </li>
+          <li><i class="fa-solid fa-ellipsis-vertical"></i></ion-icon>
+          </li>
+        </ul>
+      </div>
+
+
+      <div id="all-messages" class="chatBox">
+
+      </div>
+
+      <div class="chatbox_input">
+        <ion-icon name="happy-outline"></ion-icon>
+        <ion-icon name="attach-outline"></ion-icon>
+        <input id="message" type="text" placeholder="Type a message">
+        <ion-icon id="send" name="mic-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
+  </div>
+  <span id="current-user"></span>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="chat.js" type="module"></script>
+
+</body>
+
+</html>
